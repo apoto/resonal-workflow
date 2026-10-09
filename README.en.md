@@ -1,6 +1,6 @@
 # resonal-workflow (v1)
 
-English | [日本語](README.ja.md)
+[日本語](README.md) | English
 
 A workflow for making AI-vocal songs, from planning to release prep, by talking with an AI. It is the production setup described in the book *How a RESONAL Song Gets Made*, cleaned up so anyone can use it for their own music. The book explains how to use it, step by step, for first-timers.
 
@@ -251,7 +251,7 @@ It is provided as-is. If something doesn't work, is unclear, or you have a reque
 
 The book explains how to use this workflow and what each step does.
 
-- [How a RESONAL Song Gets Made — A Workflow for Running a Music Unit with Claude Code (Zenn Book, English)](https://zenn.dev/apoto/books/resonal-pipeline-en)
+- [How a RESONAL Song Gets Made — Running a Music Unit with Claude Code (Zenn Book, English)](https://zenn.dev/apoto/books/resonal-pipeline-en)
 - [RESONALの1曲ができるまで — Claude Codeで音楽ユニットを回すワークフロー（Zenn Book, Japanese）](https://zenn.dev/apoto/books/resonal-pipeline)
 
 The chapter "RESONAL's Own Setup" also introduces mechanisms RESONAL actually uses that are not in the public version.
