@@ -1,0 +1,25 @@
+{
+  "name": "mv-style-invert-shapes",
+  "version": "1.0.0",
+  "description": "invert-shapes lyric video style: solid white shapes over extra-bold gothic lyrics, overlap inverted with mixBlendMode difference (Remotion)",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render LyricVideo out/main.mp4",
+    "render:short": "remotion render ShortVideo out/short.mp4",
+    "thumb": "remotion still Thumbnail out/thumbnail.jpg"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.481",
+    "@remotion/google-fonts": "4.0.481",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.481"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "typescript": "5.8.2"
+  },
+  "license": "MIT",
+  "private": true
+}

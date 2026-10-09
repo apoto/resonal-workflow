@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "duration": 60.0,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "audio": "audio.wav",
+    "bg": "bg.png",
+    "bgVertical": "bg_vertical.png",
+    "bgVideo": "loop_bg.mp4",
+    "bgVideoSec": 5.0,
+    "timingOffsetSec": 0,
+    "bpm": 140.0,
+    "bgColor": "#0d0b12",
+    "thumbTitle": "SAMPLE",
+    "titleCard": {
+      "from": 8.66,
+      "to": 12.0
+    },
+    "endCard": {
+      "boltAt": 55.0,
+      "blackFrom": 55.3,
+      "titleFrom": 56.5,
+      "title": "SAMPLE"
+    },
+    "invertHits": [
+      {
+        "t": 14.0,
+        "f": 4,
+        "kind": "small"
+      },
+      {
+        "t": 24.0,
+        "f": 6,
+        "kind": "big"
+      },
+      {
+        "t": 55.0,
+        "f": 6,
+        "kind": "big"
+      }
+    ],
+    "sparkHits": [
+      40.0
+    ],
+    "calmRegions": [
+      {
+        "a": 36.0,
+        "b": 42.0
+      }
+    ],
+    "buildRegions": [
+      {
+        "a": 42.0,
+        "b": 48.0
+      }
+    ],
+    "cameraMoves": [
+      {
+        "a": 30.0,
+        "b": 36.0,
+        "kind": "pan-up",
+        "amount": 1.0
+      },
+      {
+        "a": 42.0,
+        "b": 48.0,
+        "kind": "pan-focus",
+        "fromY": 0.7,
+        "toY": 0.22,
+        "fromScale": 2.0,
+        "toScale": 2.3
+      },
+      {
+        "a": 48.0,
+        "b": 55.0,
+        "kind": "pull-focus",
+        "fromY": 0.5,
+        "toY": 0.22,
+        "fromScale": 1.05,
+        "toScale": 2.4
+      }
+    ],
+    "videoRegions": [
+      {
+        "a": 30.0,
+        "b": 36.0
+      },
+      {
+        "a": 48.0,
+        "b": 55.0
+      }
+    ],
+    "hudRegions": [
+      {
+        "a": 30.0,
+        "b": 36.0,
+        "intensity": 1.0
+      }
+    ],
+    "faceRegions": [
+      {
+        "a": 24.0,
+        "b": 30.0
+      }
+    ],
+    "shortRange": {
+      "a": 12.0,
+      "b": 36.0
+    }
+  },
+  "phrases": [
+    {
+      "t": 12.0,
+      "hold": 2.0,
+      "text": "Sample line one",
+      "size": 300,
+      "reveal": "flow",
+      "shapes": [
+        {
+          "at": 1,
+          "kind": 0,
+          "mode": "point",
+          "corner": "tr"
+        }
+      ]
+    },
+    {
+      "t": 14.0,
+      "hold": 2.0,
+      "text": "Sample\\nline two",
+      "size": 360,
+      "reveal": "flow",
+      "tilt": 2,
+      "shapes": [
+        {
+          "at": 2,
+          "kind": 1,
+          "mode": "big",
+          "dx": -0.3
+        }
+      ]
+    },
+    {
+      "t": 16.0,
+      "hold": 2.0,
+      "text": "サンプル",
+      "size": 420,
+      "reveal": "swap",
+      "shapes": [
+        {
+          "at": 0,
+          "kind": 2,
+          "mode": "cover"
+        }
+      ]
+    },
+    {
+      "t": 18.0,
+      "hold": 2.0,
+      "text": "Sample\\nline four",
+      "size": 340,
+      "reveal": "block"
+    },
+    {
+      "t": 20.0,
+      "hold": 2.0,
+      "text": "Sample line five",
+      "size": 300,
+      "reveal": "flow",
+      "tilt": -1.5,
+      "shapes": [
+        {
+          "at": 3,
+          "kind": 0,
+          "mode": "big"
+        }
+      ]
+    },
+    {
+      "t": 24.0,
+      "hold": 2.0,
+      "text": "HOOK",
+      "size": 520,
+      "reveal": "block",
+      "shapes": [
+        {
+          "at": 1,
+          "kind": 0,
+          "mode": "big"
+        }
+      ]
+    },
+    {
+      "t": 26.0,
+      "hold": 2.0,
+      "text": "Sample\\nline seven",
+      "size": 360,
+      "reveal": "flow"
+    },
+    {
+      "t": 42.0,
+      "hold": 2.0,
+      "text": "Sample line eight",
+      "size": 300,
+      "reveal": "flow",
+      "shapes": [
+        {
+          "at": 0,
+          "kind": 2,
+          "mode": "point",
+          "corner": "bl"
+        }
+      ]
+    },
+    {
+      "t": 45.0,
+      "hold": 2.0,
+      "text": "LAST",
+      "size": 520,
+      "reveal": "block",
+      "shapes": [
+        {
+          "at": 0,
+          "kind": 1,
+          "mode": "big"
+        }
+      ]
+    }
+  ]
+}

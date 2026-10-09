@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "duration": 60.0,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "audio": "audio.wav",
+    "bpm": 150.0,
+    "firstBeat": 0.0,
+    "timingOffsetSec": 0
+  },
+  "lyrics": [
+    {
+      "t": 18.0,
+      "hold": 1.98,
+      "text": "Sample line one",
+      "layout": "line"
+    },
+    {
+      "t": 20.0,
+      "hold": 1.98,
+      "text": "sample line two",
+      "layout": "line"
+    },
+    {
+      "t": 22.0,
+      "hold": 0.78,
+      "text": "Same one",
+      "layout": "line",
+      "grp": "a",
+      "gi": 0,
+      "gn": 3
+    },
+    {
+      "t": 22.8,
+      "hold": 0.78,
+      "text": "same two",
+      "layout": "line",
+      "grp": "a",
+      "gi": 1,
+      "gn": 3
+    },
+    {
+      "t": 23.6,
+      "hold": 0.78,
+      "text": "same three",
+      "layout": "line",
+      "grp": "a",
+      "gi": 2,
+      "gn": 3
+    },
+    {
+      "t": 24.4,
+      "hold": 1.58,
+      "text": "small note",
+      "layout": "small"
+    },
+    {
+      "t": 26.0,
+      "hold": 1.98,
+      "text": "SAMPLE TITLE",
+      "layout": "stamp"
+    },
+    {
+      "t": 28.0,
+      "hold": 1.98,
+      "text": "Sample line three",
+      "layout": "line",
+      "accent": "amber"
+    },
+    {
+      "t": 30.0,
+      "hold": 0.78,
+      "text": "Kick",
+      "layout": "strip",
+      "grp": "b",
+      "gi": 0,
+      "gn": 3
+    },
+    {
+      "t": 30.8,
+      "hold": 0.78,
+      "text": "stamp",
+      "layout": "strip",
+      "grp": "b",
+      "gi": 1,
+      "gn": 3
+    },
+    {
+      "t": 31.6,
+      "hold": 2.38,
+      "text": "count",
+      "layout": "strip",
+      "grp": "b",
+      "gi": 2,
+      "gn": 3
+    },
+    {
+      "t": 34.0,
+      "hold": 0.98,
+      "text": "Again",
+      "layout": "tower",
+      "grp": "c",
+      "gi": 0,
+      "gn": 4
+    },
+    {
+      "t": 35.0,
+      "hold": 0.98,
+      "text": "again",
+      "layout": "tower",
+      "grp": "c",
+      "gi": 1,
+      "gn": 4
+    },
+    {
+      "t": 36.0,
+      "hold": 0.98,
+      "text": "again",
+      "layout": "tower",
+      "grp": "c",
+      "gi": 2,
+      "gn": 4
+    },
+    {
+      "t": 37.0,
+      "hold": 2.98,
+      "text": "again",
+      "layout": "tower",
+      "grp": "c",
+      "gi": 3,
+      "gn": 4
+    },
+    {
+      "t": 40.0,
+      "hold": 1.98,
+      "text": "SAMPLE TITLE",
+      "layout": "stamp"
+    },
+    {
+      "t": 42.0,
+      "hold": 2.98,
+      "text": "Sample line four",
+      "layout": "line"
+    },
+    {
+      "t": 45.0,
+      "hold": 2.98,
+      "text": "SAMPLE END",
+      "layout": "stamp",
+      "accent": "amber"
+    }
+  ]
+}

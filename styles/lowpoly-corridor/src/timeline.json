@@ -1,0 +1,101 @@
+{
+  "sections": [
+    {
+      "kind": "intro",
+      "t0": 0,
+      "t1": 10
+    },
+    {
+      "kind": "verseChar",
+      "t0": 10,
+      "t1": 20
+    },
+    {
+      "kind": "build",
+      "t0": 20,
+      "t1": 24
+    },
+    {
+      "kind": "drop",
+      "t0": 24,
+      "t1": 36
+    },
+    {
+      "kind": "breakdown",
+      "t0": 36,
+      "t1": 44
+    },
+    {
+      "kind": "buildup",
+      "t0": 44,
+      "t1": 48
+    },
+    {
+      "kind": "finaldrop",
+      "t0": 48,
+      "t1": 56
+    },
+    {
+      "kind": "outro",
+      "t0": 56,
+      "t1": 60
+    }
+  ],
+  "lyrics": [
+    {
+      "t": 10,
+      "end": 13,
+      "text": "Sample line one"
+    },
+    {
+      "t": 13,
+      "end": 16,
+      "text": "Sample line two"
+    },
+    {
+      "t": 16,
+      "end": 20,
+      "text": "Sample line three"
+    },
+    {
+      "t": 20,
+      "end": 24,
+      "text": "Sample line four"
+    },
+    {
+      "t": 24,
+      "end": 26,
+      "text": "Sample"
+    },
+    {
+      "t": 26,
+      "end": 30,
+      "text": "Drop line one"
+    },
+    {
+      "t": 30,
+      "end": 32,
+      "text": "Sample"
+    },
+    {
+      "t": 32,
+      "end": 36,
+      "text": "Drop line two"
+    },
+    {
+      "t": 38,
+      "end": 42,
+      "text": "Quiet line"
+    },
+    {
+      "t": 48,
+      "end": 50,
+      "text": "Sample"
+    },
+    {
+      "t": 50,
+      "end": 56,
+      "text": "Final line"
+    }
+  ]
+}

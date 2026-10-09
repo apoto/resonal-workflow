@@ -1,0 +1,125 @@
+{
+  "_README": "crimson-gothic の入力見本（ダミー）。実曲では丸ごと差し替える。t/hold は秒。[t, t+hold) でハードカット（重なり無し）。pattern: edge(左右端の縦書き明朝)/centerChar(中央巨大1文字)/centerBig(中央巨大＋色収差)/build(ビルドアップ 外側の文字→中央で単語完成)。serif=英字 Playfair、glitch=横波液状グリッチ、chroma=色収差のみ。背景は meta.backgroundImage(画像) か meta.background(色)。meta.credits は任意＝クレジットの秒だけを上書き（文言は input/project.json）。詳細は src/types.ts / README.md。",
+  "meta": {
+    "duration": 60,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "audio": "audio.wav",
+    "background": "#0b0809",
+    "ink": "#f2efe9",
+    "timingOffsetSec": 0
+  },
+  "lyrics": [
+    {
+      "text": "サンプルの一行",
+      "t": 12.0,
+      "hold": 0.8,
+      "pattern": "edge",
+      "side": "right"
+    },
+    {
+      "text": "縦書きの見本",
+      "t": 12.8,
+      "hold": 0.8,
+      "pattern": "edge",
+      "side": "left"
+    },
+    {
+      "text": "左右の端に",
+      "t": 13.6,
+      "hold": 0.8,
+      "pattern": "edge",
+      "side": "right"
+    },
+    {
+      "text": "静かに出す",
+      "t": 14.4,
+      "hold": 0.8,
+      "pattern": "edge",
+      "side": "left"
+    },
+    {
+      "text": "S",
+      "t": 15.2,
+      "hold": 0.4,
+      "pattern": "centerChar",
+      "serif": true
+    },
+    {
+      "text": "A",
+      "t": 15.6,
+      "hold": 0.4,
+      "pattern": "centerChar",
+      "serif": true
+    },
+    {
+      "text": "M",
+      "t": 16.0,
+      "hold": 0.4,
+      "pattern": "centerChar",
+      "serif": true
+    },
+    {
+      "text": "P",
+      "t": 16.4,
+      "hold": 0.4,
+      "pattern": "centerChar",
+      "serif": true
+    },
+    {
+      "text": "Sample line one",
+      "t": 16.8,
+      "hold": 0.8,
+      "pattern": "centerBig",
+      "serif": true,
+      "chroma": true
+    },
+    {
+      "text": "HOOK",
+      "t": 17.6,
+      "hold": 0.8,
+      "pattern": "centerBig",
+      "serif": true,
+      "glitch": true
+    },
+    {
+      "text": "HIT",
+      "t": 18.4,
+      "hold": 1.2,
+      "pattern": "centerBig",
+      "serif": true,
+      "size": 560,
+      "glitch": true
+    },
+    {
+      "text": "WORD",
+      "t": 20.0,
+      "hold": 2.0,
+      "pattern": "build",
+      "serif": true
+    },
+    {
+      "text": "Sample line two",
+      "t": 30.0,
+      "hold": 1.6,
+      "pattern": "centerBig",
+      "serif": true
+    },
+    {
+      "text": "Sample line three",
+      "t": 40.0,
+      "hold": 1.6,
+      "pattern": "centerBig",
+      "serif": true,
+      "chroma": true
+    },
+    {
+      "text": "END",
+      "t": 50.0,
+      "hold": 2.0,
+      "pattern": "build",
+      "serif": true
+    }
+  ]
+}

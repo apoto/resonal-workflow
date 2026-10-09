@@ -1,0 +1,25 @@
+{
+  "name": "mv-style-sky-keyvisual",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "sky-keyvisual — one key visual + motion graphics: illustrated field, transparent character clips retimed to bars, kinetic typography with typo-bomb (Remotion)",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render LyricVideo out/main.mp4",
+    "render:short": "remotion render ShortVideo out/short.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.0",
+    "@remotion/tailwind-v4": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,209 @@
+{
+ "meta": {
+  "duration": 60,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "audio": "audio.wav",
+  "timingOffsetSec": 0,
+  "bpm": 160,
+  "clipDuration": 5.0,
+  "clipAdjust": {
+   "G-still": {
+    "scale": 1.18,
+    "y": 0
+   }
+  },
+  "creditsFrom": 7.0,
+  "creditsStep": 2.2,
+  "sections": [
+   {
+    "no": 1,
+    "start": 0.0,
+    "end": 6.0,
+    "label": "Intro",
+    "field": "venue-wide",
+    "clip": "A-standing",
+    "gear": "drift",
+    "density": 0.35,
+    "camY": 0.0,
+    "zoom": 1.0,
+    "still": true,
+    "framing": "bust"
+   },
+   {
+    "no": 2,
+    "start": 6.0,
+    "end": 14.0,
+    "label": "Verse（クレジット）",
+    "field": "venue-close",
+    "clip": "B-beckon",
+    "gear": "drift",
+    "density": 0.35,
+    "camY": 0.1,
+    "zoom": 1.0,
+    "still": true,
+    "framing": "feet"
+   },
+   {
+    "no": 3,
+    "start": 14.0,
+    "end": 26.0,
+    "label": "Chorus",
+    "field": "venue",
+    "clip": "C-para-A",
+    "clips": [
+     "C-para-A",
+     "C-para-B",
+     "D-armsup"
+    ],
+    "switchBars": 2,
+    "gear": "beat",
+    "density": 1.0,
+    "camY": 0.0,
+    "zoom": 1.0,
+    "framing": "full"
+   },
+   {
+    "no": 4,
+    "start": 26.0,
+    "end": 34.0,
+    "label": "Breakdown",
+    "field": "dim",
+    "clip": "G-still",
+    "gear": "build",
+    "density": 0.1,
+    "camY": -0.2,
+    "zoom": 1.05,
+    "still": true,
+    "framing": "bust"
+   },
+   {
+    "no": 5,
+    "start": 34.0,
+    "end": 42.0,
+    "label": "落ちサビ",
+    "field": "sunset",
+    "clip": "E-closeup",
+    "gear": "drift",
+    "density": 0.2,
+    "silhouette": true,
+    "still": true,
+    "framing": "bust"
+   },
+   {
+    "no": 6,
+    "start": 42.0,
+    "end": 54.0,
+    "label": "Final Chorus",
+    "field": "venue",
+    "clip": "D-armsup",
+    "clips": [
+     "D-armsup",
+     "C-para-B",
+     "F-shrug"
+    ],
+    "switchBars": 2,
+    "gear": "beat",
+    "density": 1.0,
+    "camY": 0.15,
+    "zoom": 1.05,
+    "framing": "full"
+   },
+   {
+    "no": 7,
+    "start": 54.0,
+    "end": 60.0,
+    "label": "Outro",
+    "field": "white",
+    "clip": "A-standing",
+    "gear": "drift",
+    "density": 0.1,
+    "still": true,
+    "framing": "full"
+   }
+  ],
+  "hits": [
+   14.0,
+   20.0,
+   42.0,
+   48.0
+  ],
+  "endcard": {
+   "start": 57.5,
+   "end": 60.0,
+   "src": "endcard.png"
+  }
+ },
+ "lyrics": [
+  {
+   "text": "Sample line one",
+   "t": 1.0,
+   "mode": "swap",
+   "hold": 2.4
+  },
+  {
+   "text": "sample line two",
+   "t": 3.6,
+   "mode": "swap",
+   "hold": 2.2
+  },
+  {
+   "text": "SAMPLE TITLE",
+   "t": 14.0,
+   "mode": "bomb",
+   "hold": 2.0
+  },
+  {
+   "text": "chorus line one",
+   "t": 16.4,
+   "mode": "swap",
+   "hold": 2.6
+  },
+  {
+   "text": "call",
+   "t": 19.2,
+   "mode": "stack",
+   "slot": 0,
+   "hold": 1.2
+  },
+  {
+   "text": "response",
+   "t": 20.4,
+   "mode": "stack",
+   "slot": 1,
+   "hold": 1.2
+  },
+  {
+   "text": "chorus line two",
+   "t": 22.0,
+   "mode": "swap",
+   "hold": 3.0
+  },
+  {
+   "text": "a small aside",
+   "t": 28.0,
+   "mode": "small",
+   "hold": 3.0
+  },
+  {
+   "text": "quiet line",
+   "t": 35.0,
+   "mode": "swap",
+   "hold": 3.4,
+   "scale": 0.9
+  },
+  {
+   "text": "SAMPLE TITLE",
+   "t": 42.0,
+   "mode": "bomb",
+   "hold": 2.0
+  },
+  {
+   "text": "final line",
+   "t": 44.4,
+   "mode": "swap",
+   "hold": 3.0
+  }
+ ]
+}

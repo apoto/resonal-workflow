@@ -1,0 +1,84 @@
+{
+  "_README": "white-cut の入力見本（ダミー）。実曲では丸ごと差し替える。t/hold は秒。[t, t+hold) でパッと出してパッと消す（重なり無し）。vertical 既定 true（縦書き）、英語は false。quote で「」、glitch でその行の出現時に横波グリッチ。meta.credits は任意＝クレジットの秒だけを上書き（文言は input/project.json）。詳細は src/types.ts / README.md。",
+  "meta": {
+    "duration": 60,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "audio": "audio.wav",
+    "background": "#fafafa",
+    "ink": "#121212",
+    "timingOffsetSec": 0
+  },
+  "lyrics": [
+    {
+      "text": "サンプルの一行",
+      "t": 12.0,
+      "hold": 1.6,
+      "quote": true
+    },
+    {
+      "text": "Sample line one",
+      "t": 15.0,
+      "hold": 1.6,
+      "vertical": false
+    },
+    {
+      "text": "Sample line two",
+      "t": 18.0,
+      "hold": 1.6,
+      "vertical": false,
+      "glitch": true
+    },
+    {
+      "text": "縦書きの見本",
+      "t": 21.0,
+      "hold": 1.6,
+      "quote": true
+    },
+    {
+      "text": "Sample line three",
+      "t": 24.0,
+      "hold": 1.6,
+      "vertical": false
+    },
+    {
+      "text": "Sample line four",
+      "t": 27.0,
+      "hold": 1.6,
+      "vertical": false
+    },
+    {
+      "text": "SAMPLE HOOK",
+      "t": 30.0,
+      "hold": 1.6,
+      "vertical": false,
+      "glitch": true
+    },
+    {
+      "text": "Sample line five",
+      "t": 33.0,
+      "hold": 1.6,
+      "vertical": false
+    },
+    {
+      "text": "Sample line six",
+      "t": 36.0,
+      "hold": 1.6,
+      "vertical": false
+    },
+    {
+      "text": "Sample line seven",
+      "t": 39.0,
+      "hold": 1.6,
+      "vertical": false,
+      "glitch": true
+    },
+    {
+      "text": "SAMPLE",
+      "t": 42.0,
+      "hold": 1.6,
+      "vertical": false
+    }
+  ]
+}

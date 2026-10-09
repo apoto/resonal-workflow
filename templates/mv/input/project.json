@@ -1,0 +1,15 @@
+{
+ "_generated": "tools/00_project.sh が workflow.config.json と song.json から生成する。手で編集しない",
+ "title": "Sample",
+ "artist": "UNIT",
+ "credits": [
+  "UNIT",
+  "Vocal: Vocal",
+  "Produced by you"
+ ],
+ "look": "spectrum-still",
+ "bgLoop": {
+  "wide": null,
+  "vert": null
+ }
+}

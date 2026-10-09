@@ -1,0 +1,54 @@
+{
+ "meta": {
+  "duration": 60.0,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "audio": "audio.wav",
+  "shortScale": 0.82
+ },
+ "lines": [
+  {
+   "t": 12.0,
+   "hold": 3.0,
+   "pattern": "verse",
+   "text": "Sample line one"
+  },
+  {
+   "t": 15.0,
+   "hold": 3.0,
+   "pattern": "verse",
+   "text": "Sample line two"
+  },
+  {
+   "t": 18.0,
+   "hold": 3.5,
+   "pattern": "verse",
+   "text": "Sample line three"
+  },
+  {
+   "t": 30.0,
+   "hold": 2.0,
+   "pattern": "slam",
+   "text": "Sample"
+  },
+  {
+   "t": 32.0,
+   "hold": 3.0,
+   "pattern": "drop",
+   "text": "Sample chorus"
+  },
+  {
+   "t": 35.0,
+   "hold": 3.0,
+   "pattern": "drop",
+   "text": "Sample chorus again"
+  },
+  {
+   "t": 50.0,
+   "hold": 3.5,
+   "pattern": "end",
+   "text": "Sample"
+  }
+ ]
+}

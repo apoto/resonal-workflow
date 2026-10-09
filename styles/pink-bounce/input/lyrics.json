@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "duration": 60,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "audio": "audio.wav",
+    "background": "bg.png",
+    "backgroundVertical": "bg_vertical.png",
+    "timingOffsetSec": 0,
+    "bpm": 120,
+    "danceRegions": [
+      [
+        24.0,
+        40.0
+      ]
+    ],
+    "sections": [
+      {
+        "name": "intro",
+        "start": 0.0,
+        "end": 8.0
+      },
+      {
+        "name": "verse",
+        "start": 8.0,
+        "end": 20.0
+      },
+      {
+        "name": "prechorus",
+        "start": 20.0,
+        "end": 24.0
+      },
+      {
+        "name": "chorus",
+        "start": 24.0,
+        "end": 40.0
+      },
+      {
+        "name": "bridge",
+        "start": 40.0,
+        "end": 48.0
+      },
+      {
+        "name": "outro",
+        "start": 48.0,
+        "end": 60.0
+      }
+    ],
+    "intro": [
+      {
+        "t": 0.5,
+        "hold": 2.0
+      },
+      {
+        "t": 2.5,
+        "hold": 2.0
+      },
+      {
+        "t": 4.5,
+        "hold": 2.0
+      }
+    ]
+  },
+  "lines": [
+    {
+      "t": 8.0,
+      "hold": 2.0,
+      "pattern": "center",
+      "text": "Sample line one",
+      "size": 96
+    },
+    {
+      "t": 10.0,
+      "hold": 2.0,
+      "pattern": "center",
+      "text": "Sample line two",
+      "size": 96
+    },
+    {
+      "t": 12.0,
+      "hold": 4.0,
+      "pattern": "split",
+      "left": "Left column",
+      "right": "Right column",
+      "size": 74
+    },
+    {
+      "t": 16.0,
+      "hold": 4.0,
+      "pattern": "scatter",
+      "words": [
+        {
+          "t": "Scatter one",
+          "size": 82,
+          "x": 28,
+          "y": 20,
+          "rot": -8
+        },
+        {
+          "t": "Scatter two",
+          "size": 98,
+          "x": 72,
+          "y": 26,
+          "rot": 6
+        },
+        {
+          "t": "Scatter three",
+          "size": 78,
+          "x": 50,
+          "y": 82,
+          "rot": -4
+        }
+      ]
+    },
+    {
+      "t": 20.0,
+      "hold": 2.0,
+      "pattern": "center",
+      "text": "Sample line five",
+      "size": 90,
+      "handwrite": true
+    },
+    {
+      "t": 22.0,
+      "hold": 2.0,
+      "pattern": "center",
+      "text": "Here it comes",
+      "size": 110
+    },
+    {
+      "t": 24.0,
+      "hold": 4.0,
+      "pattern": "scatter",
+      "neon": true,
+      "words": [
+        {
+          "t": "SAMPLE HOOK!",
+          "size": 150,
+          "x": 50,
+          "y": 76,
+          "rot": -3
+        },
+        {
+          "t": "Hey!",
+          "size": 72,
+          "x": 85,
+          "y": 15,
+          "rot": 8
+        }
+      ]
+    },
+    {
+      "t": 28.0,
+      "hold": 4.0,
+      "pattern": "center",
+      "text": "Chorus line two",
+      "size": 120,
+      "neon": true
+    },
+    {
+      "t": 32.0,
+      "hold": 4.0,
+      "pattern": "center",
+      "text": "Chorus line three",
+      "size": 110,
+      "neon": true
+    },
+    {
+      "t": 36.0,
+      "hold": 4.0,
+      "pattern": "scatter",
+      "neon": true,
+      "words": [
+        {
+          "t": "SAMPLE HOOK!",
+          "size": 150,
+          "x": 50,
+          "y": 76,
+          "rot": 3
+        },
+        {
+          "t": "Hey!",
+          "size": 72,
+          "x": 15,
+          "y": 15,
+          "rot": -8
+        }
+      ]
+    },
+    {
+      "t": 40.0,
+      "hold": 8.0,
+      "pattern": "giant",
+      "text": "GIANT",
+      "size": 420,
+      "deco": false
+    },
+    {
+      "t": 48.0,
+      "hold": 4.0,
+      "pattern": "center",
+      "text": "Sample line twelve",
+      "size": 96
+    },
+    {
+      "t": 52.0,
+      "hold": 5.0,
+      "pattern": "center",
+      "text": "The end",
+      "size": 130,
+      "neon": true
+    }
+  ]
+}

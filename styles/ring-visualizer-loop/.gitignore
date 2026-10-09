@@ -1,0 +1,6 @@
+node_modules/
+out/
+package-lock.json
+public/*
+!public/.gitkeep
+.DS_Store

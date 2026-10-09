@@ -1,0 +1,245 @@
+{
+ "meta": {
+  "duration": 60.0,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "audio": "audio.wav",
+  "bgColor": "#fff2f7",
+  "bpm": 174,
+  "timingOffsetSec": 0,
+  "bg": "bg.png",
+  "bgVertical": "bg_vertical.png",
+  "bgFar": "bg_far.png",
+  "charPlates": {
+   "base": "plates/char_base.png"
+  }
+ },
+ "phrases": [
+  {
+   "t": 0.5,
+   "hold": 1.9,
+   "text": "Sample line one",
+   "size": 140,
+   "tilt": 1.1,
+   "english": true,
+   "cold": true
+  },
+  {
+   "t": 2.4,
+   "hold": 1.9,
+   "text": "sample line two",
+   "size": 140,
+   "tilt": -1.35,
+   "english": true,
+   "cold": true
+  },
+  {
+   "t": 4.3,
+   "hold": 1.7,
+   "text": "サンプルの歌詞",
+   "size": 140,
+   "tilt": 1.6,
+   "cold": true
+  },
+  {
+   "t": 6.0,
+   "hold": 2.0,
+   "text": "short line",
+   "size": 140,
+   "tilt": -1.1,
+   "english": true,
+   "cold": true
+  },
+  {
+   "t": 8.0,
+   "hold": 2.0,
+   "text": "サンプル その二",
+   "size": 140,
+   "tilt": 1.35,
+   "cold": true
+  },
+  {
+   "t": 10.0,
+   "hold": 1.4,
+   "text": "build up",
+   "size": 140,
+   "tilt": -1.6,
+   "english": true
+  },
+  {
+   "t": 11.4,
+   "hold": 1.3,
+   "text": "build up",
+   "size": 140,
+   "tilt": 1.1,
+   "english": true
+  },
+  {
+   "t": 12.7,
+   "hold": 1.3,
+   "text": "ビルドアップ",
+   "size": 140,
+   "tilt": -1.35
+  },
+  {
+   "t": 14.0,
+   "hold": 1.4,
+   "text": "SAMPLE HOOK",
+   "size": 210,
+   "tilt": 1.6,
+   "drop": true,
+   "english": true
+  },
+  {
+   "t": 15.4,
+   "hold": 1.6,
+   "text": "サビの一行目",
+   "size": 210,
+   "tilt": -1.1,
+   "drop": true
+  },
+  {
+   "t": 17.0,
+   "hold": 1.4,
+   "text": "SAMPLE HOOK",
+   "size": 210,
+   "tilt": 1.35,
+   "drop": true,
+   "english": true
+  },
+  {
+   "t": 18.4,
+   "hold": 1.6,
+   "text": "サビの二行目",
+   "size": 210,
+   "tilt": -1.6,
+   "drop": true
+  },
+  {
+   "t": 20.0,
+   "hold": 1.8,
+   "text": "last chorus line",
+   "size": 210,
+   "tilt": 1.1,
+   "drop": true,
+   "english": true
+  },
+  {
+   "t": 26.0,
+   "hold": 2.0,
+   "text": "Sample line three",
+   "size": 140,
+   "tilt": -1.35,
+   "english": true,
+   "cold": true
+  },
+  {
+   "t": 28.0,
+   "hold": 2.0,
+   "text": "サンプル その三",
+   "size": 140,
+   "tilt": 1.6,
+   "cold": true
+  },
+  {
+   "t": 30.0,
+   "hold": 2.0,
+   "text": "build again",
+   "size": 140,
+   "tilt": -1.1,
+   "english": true
+  },
+  {
+   "t": 32.0,
+   "hold": 1.9,
+   "text": "もう一度",
+   "size": 140,
+   "tilt": 1.35
+  },
+  {
+   "t": 36.0,
+   "hold": 1.0,
+   "text": "one, two",
+   "size": 210,
+   "tilt": -1.6,
+   "drop": true,
+   "english": true
+  },
+  {
+   "t": 37.0,
+   "hold": 1.5,
+   "text": "one, two",
+   "size": 210,
+   "tilt": 1.1,
+   "drop": true,
+   "english": true
+  },
+  {
+   "t": 38.5,
+   "hold": 2.8,
+   "text": "quiet sample line",
+   "size": 140,
+   "tilt": -1.35,
+   "english": true,
+   "cold": true
+  },
+  {
+   "t": 41.3,
+   "hold": 2.7,
+   "text": "静かな一行",
+   "size": 140,
+   "tilt": 1.6,
+   "cold": true
+  },
+  {
+   "t": 44.0,
+   "hold": 1.4,
+   "text": "SAMPLE HOOK",
+   "size": 210,
+   "tilt": -1.1,
+   "drop": true,
+   "english": true
+  },
+  {
+   "t": 45.4,
+   "hold": 1.6,
+   "text": "サビの一行目",
+   "size": 210,
+   "tilt": 1.35,
+   "drop": true
+  },
+  {
+   "t": 47.0,
+   "hold": 1.4,
+   "text": "SAMPLE HOOK",
+   "size": 210,
+   "tilt": -1.6,
+   "drop": true,
+   "english": true
+  },
+  {
+   "t": 48.4,
+   "hold": 1.6,
+   "text": "サビの二行目",
+   "size": 210,
+   "tilt": 1.1,
+   "drop": true
+  },
+  {
+   "t": 52.0,
+   "hold": 2.0,
+   "text": "Sample outro",
+   "size": 140,
+   "tilt": -1.35,
+   "english": true
+  },
+  {
+   "t": 54.0,
+   "hold": 2.0,
+   "text": "おしまい",
+   "size": 140,
+   "tilt": 1.6
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+  "artist": "UNIT",
+  "vocalName": "Vocal",
+  "producerName": "you",
+  "credits": [
+    "UNIT",
+    "Vocal: Vocal",
+    "Produced by you"
+  ],
+  "lyricsLang": "ja",
+  "mastering": {
+    "preset": "streaming",
+    "integratedLufs": -14,
+    "lufsTolerance": 0.5,
+    "truePeakCeiling": -1.0,
+    "sampleRate": 48000,
+    "bitDepth": 24
+  },
+  "providers": {
+    "music": {
+      "use": "suno",
+      "note": ""
+    },
+    "image": {
+      "use": "codex",
+      "note": ""
+    },
+    "video": {
+      "use": "none",
+      "note": ""
+    },
+    "notify": {
+      "use": "none",
+      "note": ""
+    }
+  },
+  "release": {
+    "targets": [
+      "youtube",
+      "dsp"
+    ],
+    "note": ""
+  },
+  "mv": {
+    "look": "spectrum-still"
+  }
+}

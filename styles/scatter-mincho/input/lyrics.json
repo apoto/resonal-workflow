@@ -1,0 +1,173 @@
+{
+  "_README": "scatter-mincho の入力見本（ダミー）。実曲では丸ごと差し替える。t/hold は秒（コードが frame へ変換）。timingOffsetSec で全体補正。beats はフレーム番号。meta.credits は任意＝クレジットの秒だけを上書き（文言は input/project.json）。詳細は src/types.ts / README.md。",
+  "meta": {
+    "duration": 60,
+    "fps": 60,
+    "width": 1920,
+    "height": 1080,
+    "audio": "audio.wav",
+    "backgroundVideo": "loop.mp4",
+    "backgroundVideoDuration": 10,
+    "background": "bg.png",
+    "timingOffsetSec": 0,
+    "scenes": [
+      {
+        "start": 2.0,
+        "end": 4.0,
+        "effect": "blackout",
+        "intensity": 1
+      },
+      {
+        "start": 6.0,
+        "end": 9.0,
+        "effect": "bgGlitch",
+        "intensity": 1
+      },
+      {
+        "start": 12.0,
+        "end": 22.0,
+        "effect": "bgChroma",
+        "intensity": 1,
+        "hits": [
+          12.0,
+          16.0
+        ]
+      },
+      {
+        "start": 49.5,
+        "end": 56.0,
+        "effect": "bgChroma",
+        "intensity": 1,
+        "hits": [
+          50.0
+        ]
+      }
+    ]
+  },
+  "beats": [
+    120,
+    240,
+    360,
+    480,
+    600,
+    720,
+    840,
+    960,
+    1080,
+    1200,
+    1320,
+    1440,
+    1560,
+    1680,
+    1800,
+    1920,
+    2040,
+    2160,
+    2280,
+    2400,
+    2520,
+    2640,
+    2760,
+    2880,
+    3000,
+    3120,
+    3240,
+    3360,
+    3480
+  ],
+  "lyrics": [
+    {
+      "text": "Sample line one",
+      "t": 4.5,
+      "hold": 1.4,
+      "style": "center"
+    },
+    {
+      "text": "Vertical words",
+      "t": 6.2,
+      "hold": 1.6,
+      "style": "vertical"
+    },
+    {
+      "text": "Two at once",
+      "t": 9.0,
+      "hold": 1.4,
+      "style": "center",
+      "stagger": true
+    },
+    {
+      "text": "Stacked together",
+      "t": 9.0,
+      "hold": 1.4,
+      "style": "center",
+      "stagger": true
+    },
+    {
+      "text": "Pinned center",
+      "t": 11.0,
+      "hold": 1.8,
+      "style": "center",
+      "pin": "center"
+    },
+    {
+      "text": "The hit",
+      "t": 12.0,
+      "hold": 1.2,
+      "style": "huge-flash",
+      "accent": "#ff2b2b"
+    },
+    {
+      "text": "One more",
+      "t": 14.0,
+      "hold": 0.8,
+      "style": "huge-flash",
+      "scale": 1.0
+    },
+    {
+      "text": "One more",
+      "t": 14.9,
+      "hold": 0.8,
+      "style": "huge-flash",
+      "scale": 1.2
+    },
+    {
+      "text": "One more",
+      "t": 15.8,
+      "hold": 0.8,
+      "style": "huge-flash",
+      "scale": 1.4
+    },
+    {
+      "text": "One more",
+      "t": 16.7,
+      "hold": 1.4,
+      "style": "huge-flash",
+      "scale": 1.8,
+      "overflow": true
+    },
+    {
+      "text": "Sample line seven",
+      "t": 24.0,
+      "hold": 1.6,
+      "style": "center"
+    },
+    {
+      "text": "Sample line eight",
+      "t": 30.0,
+      "hold": 1.6,
+      "style": "vertical"
+    },
+    {
+      "text": "Sample line nine",
+      "t": 40.0,
+      "hold": 1.6,
+      "style": "center"
+    },
+    {
+      "text": "Last hit",
+      "t": 50.0,
+      "hold": 2.0,
+      "style": "huge-flash"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "mv-style-portrait-frame",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "portrait-frame: still standing character + switching background video + stacked vertical mincho lyrics + ornamental frame (Remotion)",
+  "scripts": {
+    "dev": "remotion studio",
+    "lint": "tsx src/lint-scene.ts",
+    "render": "remotion render LyricVideo out/main.mp4 --concurrency=4",
+    "render:short": "remotion render ShortVideo out/short.mp4 --concurrency=4",
+    "thumb": "remotion still Thumbnail out/thumbnail.png",
+    "verify:loop": "tsx src/verify-loop.ts",
+    "verify:flood": "tsx src/verify-flood.ts",
+    "verify:motion": "tsx src/verify-motion.ts",
+    "verify:flicker": "tsx src/verify-flicker.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.481",
+    "@remotion/google-fonts": "4.0.481",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.481"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "5.8.2"
+  }
+}

@@ -1,0 +1,127 @@
+{
+ "_README": "burn-in 入力（ダミー）。t/hold は秒。gimmicks=ネガ反転→暗転→Drop。kind: normal/chorus/slam/whisper/echo。creditsAt=クレジットを出し始める秒（input/project.json の credits）。",
+ "meta": {
+  "duration": 60,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "audio": "audio.wav",
+  "timingOffsetSec": 0,
+  "gimmicks": [
+   {
+    "invert": 17.6,
+    "blackoutStart": 17.85,
+    "blackoutEnd": 20.3
+   }
+  ],
+  "finalInvert": 56.0,
+  "stare": {
+   "start": 42.0,
+   "invertAt": 46.0,
+   "cutAt": 47.4,
+   "ghostUntil": 49.9
+  },
+  "backgroundImage": "bg.png",
+  "energyZones": [
+   [
+    20.3,
+    31.0
+   ],
+   [
+    50.5,
+    60.0
+   ]
+  ],
+  "creditsAt": 14.8,
+  "creditStep": 0.9
+ },
+ "lyrics": [
+  {
+   "text": "Sample line one",
+   "t": 2.0,
+   "hold": 3.0,
+   "size": 70,
+   "y": 46
+  },
+  {
+   "text": "sample line two",
+   "t": 5.2,
+   "hold": 3.0,
+   "size": 70,
+   "y": 54,
+   "x": 48
+  },
+  {
+   "text": "Sample line three",
+   "t": 8.4,
+   "hold": 3.0,
+   "size": 72,
+   "y": 48,
+   "x": 52
+  },
+  {
+   "text": "sample line four",
+   "t": 11.6,
+   "hold": 3.0,
+   "size": 72,
+   "y": 53
+  },
+  {
+   "text": "a whisper",
+   "t": 18.4,
+   "hold": 1.6,
+   "kind": "whisper",
+   "size": 64
+  },
+  {
+   "text": "SAMPLE TITLE",
+   "t": 20.3,
+   "hold": 1.6,
+   "kind": "slam",
+   "size": 150
+  },
+  {
+   "text": "Chorus line one",
+   "t": 22.0,
+   "hold": 2.8,
+   "kind": "chorus",
+   "size": 80,
+   "y": 46
+  },
+  {
+   "text": "chorus line two",
+   "t": 24.9,
+   "hold": 2.8,
+   "kind": "chorus",
+   "size": 80,
+   "y": 54
+  },
+  {
+   "text": "chorus line three",
+   "t": 27.8,
+   "hold": 2.8,
+   "kind": "chorus",
+   "size": 80
+  },
+  {
+   "text": "echo",
+   "t": 34.0,
+   "hold": 3.0,
+   "kind": "echo",
+   "size": 90
+  },
+  {
+   "text": "Bridge line",
+   "t": 38.0,
+   "hold": 3.2,
+   "size": 72
+  },
+  {
+   "text": "FINAL LINE",
+   "t": 50.5,
+   "hold": 2.4,
+   "kind": "slam",
+   "size": 150
+  }
+ ]
+}
