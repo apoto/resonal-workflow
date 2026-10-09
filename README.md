@@ -37,7 +37,7 @@ Open [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and ask:
 ```
 https://github.com/apoto/resonal-workflow
 I want to make songs with AI using the workflow at this link.
-Please clone it and start with the setup. Ask me if anything is unclear.
+Please bring it onto my computer and start with the setup. Ask me if anything is unclear.
 ```
 
 If you use another agent such as Codex, it has not been tested. First ask it: "This workflow is written for Claude Code. Please adapt it so it is easy for you to use, then start the setup."
@@ -54,10 +54,10 @@ I want to make a new song
 
 | When | Say |
 |---|---|
-| You want to know where you are | "Where are we now?" |
+| You want to know how far you've gotten | "How far along are we?" |
 | You want to continue from last time | "Continue this song" |
 | You want to change settings (character, music style, etc.) | "I want to redo the setup" |
-| You want to add your own vocals or instruments | "I want to sing it myself" |
+| You want to add your own singing or instruments | "I want to sing the vocals myself" |
 
 ## What setup asks you
 
