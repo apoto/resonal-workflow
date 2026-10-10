@@ -42,7 +42,7 @@ description: 1枚のキャラ静止画を Remotion で拍に乗せて跳ねさ�
 - クリップの境界は元絵の硬いエッジ（襟・チョーカーの線など）の上に置く。肩の高さに置かない（回転差が段差線になる）。
 - BPM と位相は実音源の実測値を使う:
   ```bash
-  python3 tools/02_estimate_tempo.py <audio.wav> [--out tempo.json]   # MV プロジェクト内で実行
+  ../../tools/py.sh tools/02_estimate_tempo.py <audio.wav> [--out tempo.json]   # MV プロジェクト内で実行
   ```
   別区間で独立に検算する。発注 BPM を使わない。
 - 縦（9:16）は横の数字を渡さない。縦専用の値を持つ。
@@ -64,7 +64,7 @@ ffmpeg -y -i public/char.png -vf "drawgrid=w=iw/10:h=ih/10:t=2:c=red@0.8" out/ch
 ### 素材（キャラPNG）
 - 1枚絵で作る（パーツを個別に生成しない）。生成は `./tools/gen_image.sh "<プロンプト>" <出力.png> [参照画]`。地はフラットな単色（緑など）を指定し、`greenkey.py` で抜く:
   ```bash
-  python3 .claude/skills/bounce-rig/templates/greenkey.py char_gb.png public/char.png
+  ./tools/py.sh .claude/skills/bounce-rig/templates/greenkey.py char_gb.png public/char.png
   ```
 - 抜きは実測で検証する: 元画像で「地の色」「残す色（髪の差し色など）」だった画素が抜き後にどうなったかを数える。
 
@@ -73,7 +73,7 @@ ffmpeg -y -i public/char.png -vf "drawgrid=w=iw/10:h=ih/10:t=2:c=red@0.8" out/ch
 参照画つきの生成では体・髪のシルエットも動く＝clip-path がズレる。生成で粘らず合成で解く。
 
 ```bash
-python3 .claude/skills/bounce-rig/templates/face_swap.py <base.png> <variant.png> <out.png> [--face y0,y1] [--search 24]
+./tools/py.sh .claude/skills/bounce-rig/templates/face_swap.py <base.png> <variant.png> <out.png> [--face y0,y1] [--search 24]
 ```
 - デフォルメ頭身は `--face y0,y1` で顔の縦範囲（画像高の割合）を渡す。グリッド画で眉〜顎を読む。
 - 位置合わせはアルファ IoU 最大の平行移動を総当たり。アルファはベースから流用＝シルエットは 1px も動かない。

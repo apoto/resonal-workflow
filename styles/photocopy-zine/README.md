@@ -15,8 +15,8 @@ Repeat Offender
 2. `public/` に置く（ファイルは同梱しない）:
    - `public/audio.wav` … マスター音源
    - `public/plate_a.png` `plate_a2.png` `plate_b.png` `plate_c.png` `plate_d.png` … 構図ごとのキャラ画像（1920x1080 推奨）。構図の切り替えは `src/scenes.ts` の `CUTS`
-   - `public/ht/*.png` … 網点プレート。`python3 tools/07_halftone_plates.py` で上の plate から生成（numpy / Pillow）
-   - `public/thumbprint.png` … タイトルカードの指紋。`python3 tools/08_thumbprint.py` で生成
+   - `public/ht/*.png` … 網点プレート。`../../tools/py.sh tools/07_halftone_plates.py` で上の plate から生成（numpy / Pillow）
+   - `public/thumbprint.png` … タイトルカードの指紋。`../../tools/py.sh tools/08_thumbprint.py` で生成
 3. 書き換える:
    - `input/project.json` … `title`（タイトルカード・サムネに大文字で出る）と `credits`。公開版の `workflow.config.json` の `credits` をここに写す
    - `input/lyrics.json` … 歌詞（`t`/`hold` 秒・`layout` = line / stamp / strip / small / tower・韻のまとまり `grp/gi/gn`・`accent: "amber"`）と `meta.bpm` / `meta.firstBeat`。`tools/06_build_lyrics.py` の表を書き換えて実行すると生成できる（重なり検査つき）

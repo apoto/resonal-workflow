@@ -166,11 +166,12 @@ Your Slack token (`.env`) and your setup answers such as names (`profile/`, `wor
 
 ### Required
 
-- macOS (not tested on Windows)
+- macOS (not tested on Windows). Apple silicon (M1 or later) is recommended; on older Macs, lyric timing and MV rendering take much longer
 - Node.js 20 or later
 - Python 3.10 or later
 - ffmpeg (including ffprobe)
-- [openai-whisper](https://github.com/openai/whisper) (used to time the lyrics on screen; on a CPU it can take several times the song's length)
+- [openai-whisper](https://github.com/openai/whisper) and numpy (used to time the lyrics and measure the tempo; setup installs them into a dedicated box for this workflow, `~/.venvs/resonal-workflow`, not into your system Python)
+- About 10 GB of free disk space (whisper model, the dedicated box, MV parts and render temp files)
 - A music generation service (Suno is recommended; you generate the track yourself)
 - Claude Code (works with a Claude account; a browser chat cannot work with files on your computer, so it won't work)
   - Other agents such as Codex may work, but they have not been tested.
@@ -184,6 +185,29 @@ Choose which to use with `providers` in the next section.
 - Slack (to receive the MV and other results in your own channel)
 
 During setup, `tools/check_env.sh` checks what is missing and tells you how to install it.
+
+### Rough costs (as of October 2026)
+
+The workflow itself is free. What costs money is the monthly fee of the services you combine.
+
+| What | Monthly (approx.) |
+|---|---|
+| Claude (Pro, includes Claude Code) | about $20 |
+| Suno (Pro, commercial use allowed) | about $10 |
+| (Optional) image generation: ChatGPT (Codex) | about $20 |
+| (Optional) video generation: Kling | from about $10 |
+
+With only the required services, you can start at about $30 a month. MVs are built mainly from images, so you can finish one without video generation. Making an MV with video generation alone takes dozens of 5-second clips even for a 3-minute song, and with retakes your credits run out quickly. Prices change, so check each service's pricing page before you start.
+
+### Cleaning up
+
+To stop using it, ask the AI "Clean up what this workflow installed", or delete:
+
+- The `resonal-workflow/` folder you cloned (your songs and MV projects are inside)
+- The dedicated boxes `~/.venvs/resonal-workflow` and `~/.venvs/rembg`
+- The models `~/.cache/whisper` and `~/.u2net`
+
+Node.js, Python and ffmpeg installed with Homebrew are often used by other tools too, so it's fine to keep them.
 
 ## External services and alternatives
 

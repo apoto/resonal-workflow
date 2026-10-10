@@ -18,7 +18,7 @@ description: MV の見せ方を13のスタイルと18の軸で選ぶ（任意・
 - 音源はマスター済みの `<Title>.wav`。LYRICS.md と cover.png がそろってから選ぶ。
 
 ## 手順
-1. 曲を測る: BPM・エネルギー・雰囲気（静か／明るい／暗い／壮大／切ない／攻撃的）。BPM は `python3 templates/mv/tools/02_estimate_tempo.py "songs/<曲フォルダ>/<Title>.wav"` で実測する（BRIEF の発注値は使わない）。
+1. 曲を測る: BPM・エネルギー・雰囲気（静か／明るい／暗い／壮大／切ない／攻撃的）。BPM は `./tools/py.sh templates/mv/tools/02_estimate_tempo.py "songs/<曲フォルダ>/<Title>.wav"` で実測する（BRIEF の発注値は使わない）。
 2. 歌詞を読む: 物語・感情・世界観・キーフレーズ・サビと drop の位置。
 3. 選定表を書く（省略しない）。`ls styles/` で実物を確かめ、catalog.md の13スタイル＋既定の spectrum-still を1行ずつ評価して、採用1つ＋対抗1つに絞る。対抗を落とした理由も1行。
    - 「使ったことがない」「手順が少ない」は落選理由にしない（工数は選定表に書く）。

@@ -25,7 +25,7 @@ ls profile/ workflow.config.json 2>/dev/null
   | Node.js 20+ | `brew install node` | 配布元の手順（nvm など） |
   | Python 3.10+ | `brew install python` | `sudo apt install python3 python3-pip` |
   | ffmpeg | `brew install ffmpeg` | `sudo apt install ffmpeg` |
-  | openai-whisper | `pip install openai-whisper` | 同左 |
+  | whisper・numpy | `./tools/setup_venv.sh`（専用の箱 `~/.venvs/resonal-workflow` に入れる） | 同左 |
 - `sudo` が要るコマンドは利用者に実行してもらう（パスワードを AI に渡させない）。
 - whisper は初回にモデルを取りに行くため時間がかかると伝える。
 - 外部サービス用の道具（codex CLI・Kling MCP・Slack など）はここでは入れない。手順 2 の Q7 で選んだものだけ案内する。

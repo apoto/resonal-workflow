@@ -30,7 +30,8 @@ Claude Code も Codex も、このファイルを読んで動く（`AGENTS.md` �
 
 ### 数値は config
 - 音量の目標・クレジット・アーティスト名・使う外部サービス（`providers`）は `workflow.config.json` が正本。ほかのファイルに書き写さない。
-- モデル・venv・レンダー中間ファイルの置き場（`WHISPER_MODEL_DIR`・`REMBG_VENV`・`U2NET_HOME`・`TMPDIR`）は端末ごとの `.env` で変える（`.env.example`）。スクリプトを書き直すときも、この読み込み（`_lib.sh`・`remotion.config.ts`）を消さない。パスを直書きしない。
+- Python の部品（whisper・numpy・Pillow）は専用の箱（`./tools/setup_venv.sh`）に入れ、`./tools/py.sh` で動かす。パソコン全体の Python に `pip install` しない（`--break-system-packages` も使わない）。
+- モデル・venv・レンダー中間ファイルの置き場（`WHISPER_MODEL_DIR`・`REMBG_VENV`・`WORKFLOW_VENV`・`U2NET_HOME`・`TMPDIR`）は端末ごとの `.env` で変える（`.env.example`）。スクリプトを書き直すときも、この読み込み（`_lib.sh`・`remotion.config.ts`）を消さない。パスを直書きしない。
 
 ### exit 0 を信じず、成果物を見る
 - 「動いた」と「意図どおりにできた」は別。完了と言う前に、成果物を `ls -la`・`ffprobe`・Read（画像）で確かめる。

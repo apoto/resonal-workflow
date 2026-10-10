@@ -5,6 +5,8 @@
 set -uo pipefail
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 REMBG_VENV="${REMBG_VENV:-$(sed -n 's/^REMBG_VENV=//p' "$REPO/.env" 2>/dev/null | tr -d '"' | tail -1)}"   # 端末ごとの置き場（.env.example）
+WORKFLOW_VENV="${WORKFLOW_VENV:-$(sed -n 's/^WORKFLOW_VENV=//p' "$REPO/.env" 2>/dev/null | tr -d '"' | tail -1)}"
+WV="${WORKFLOW_VENV:-$HOME/.venvs/resonal-workflow}"
 missing=0
 
 row() { # <OK|NG|--> <名前> <説明 or 入れ方>
@@ -22,9 +24,9 @@ opt() { # <名前> <確認コマンド> <入れ方>（任意）
 echo "必須"
 need node    'node -v'                                   'https://nodejs.org から LTS を入れる（brew install node）'
 need python3 'python3 --version'                         'https://www.python.org から入れる（brew install python）'
-need numpy   'python3 -c "import numpy;print(\"numpy \"+numpy.__version__)"' 'python3 -m pip install numpy'
+need numpy   '"$WV/bin/python" -c "import numpy;print(\"numpy \"+numpy.__version__)"' './tools/setup_venv.sh（専用の箱に入れる。全体の Python には入れない）'
 need ffmpeg  'ffmpeg -version | head -1 | cut -d" " -f1-3' 'brew install ffmpeg（Windows は winget install ffmpeg）'
-need whisper 'command -v whisper'                        'python3 -m pip install openai-whisper'
+need whisper '"$WV/bin/whisper" --help >/dev/null && echo "$WV/bin/whisper"' './tools/setup_venv.sh（同上）'
 
 echo ""
 echo "MV（Remotion / 切り抜き）"

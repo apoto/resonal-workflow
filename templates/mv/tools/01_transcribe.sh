@@ -11,7 +11,7 @@ SONG="$(song_dir "${1:?usage: 01_transcribe.sh <song_dir> [lang]}")"
 TITLE="$(song_title "$SONG")"
 OUT="$SONG/transcribe"
 if [ -s "$OUT/audio_16k.json" ]; then echo "[skip] 転写済み: $OUT/audio_16k.json"; exit 0; fi
-command -v whisper >/dev/null || { echo "[NG] whisper が無い（pip install openai-whisper）" >&2; exit 2; }
+command -v whisper >/dev/null || { echo "[NG] whisper が無い（./tools/setup_venv.sh で専用の箱に入れる）" >&2; exit 2; }
 
 AUDIO=""
 for c in "$SONG/$TITLE.wav" "$SONG/audio.wav"; do [ -s "$c" ] && { AUDIO="$c"; break; }; done

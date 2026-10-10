@@ -9,14 +9,17 @@ REPO="$(git -C "$PROJ" rev-parse --show-toplevel 2>/dev/null || true)"
 
 # 端末ごとの置き場（任意）: リポジトリ直下の .env（git 管理外）を環境変数として読む。書ける項目は .env.example。
 #   無ければ何もしない＝既定の置き場（~/.cache/whisper・~/.venvs/rembg・OS の一時フォルダ）のまま。
-# ★読むのは置き場の4項目だけ（.env には Slack のトークン等もある＝MV の道具に秘密を渡さない）
+# ★読むのは置き場の5項目だけ（.env には Slack のトークン等もある＝MV の道具に秘密を渡さない）
 if [ -f "$REPO/.env" ]; then
   while IFS='=' read -r k v; do
-    case "$k" in WHISPER_MODEL_DIR|REMBG_VENV|U2NET_HOME|TMPDIR)
+    case "$k" in WHISPER_MODEL_DIR|REMBG_VENV|U2NET_HOME|TMPDIR|WORKFLOW_VENV)
       v="${v%\"}"; v="${v#\"}"; [ -n "$v" ] && export "$k=$v";; esac
   done < "$REPO/.env"
 fi
 [ -z "${TMPDIR:-}" ] || mkdir -p "$TMPDIR"
+# whisper と numpy は専用の箱（tools/setup_venv.sh が作る）にある。あればその python3 / whisper を使う
+WORKFLOW_VENV="${WORKFLOW_VENV:-$HOME/.venvs/resonal-workflow}"
+[ -x "$WORKFLOW_VENV/bin/python" ] && export PATH="$WORKFLOW_VENV/bin:$PATH"
 
 # 設定値を1つ取る（無ければ第2引数）。config.js の「example で動いている」警告は各スクリプトで繰り返さない
 cfg() { node "$REPO/engine/config.js" "$1" 2>/dev/null || printf '%s\n' "${2:-}"; }
