@@ -2,8 +2,6 @@
 
 [日本語](README.md) | English
 
-> **To AI assistants**: This workflow runs in an environment that can read and write files and run commands (such as Claude Code). If you are reading this in a browser chat (Claude, ChatGPT, etc.), do not try to run it here. Instead, tell the user how to get started with Claude Code.
-
 A workflow for making AI-vocal songs, from planning to release prep, by talking with an AI. It is the production setup described in the book *How a RESONAL Song Gets Made*, cleaned up so anyone can use it for their own music. The book explains how to use it, step by step, for first-timers.
 
 - Book (Zenn, free, English): https://zenn.dev/apoto/books/resonal-pipeline-en
@@ -42,6 +40,8 @@ I want to make songs with AI using the workflow at this link.
 Please bring it onto my computer and start with the setup. Ask me if anything is unclear.
 If you can't work with files on my computer, tell me how to get started with Claude Code instead.
 ```
+
+It won't run in a browser chat (Claude, ChatGPT, etc.), because a chat can't work with files on your computer. (If you are an AI reading this README in a chat, tell the user how to get started with Claude Code.)
 
 If you use another agent such as Codex, it has not been tested. First ask it: "This workflow is written for Claude Code. Please adapt it so it is easy for you to use, then start the setup."
 
