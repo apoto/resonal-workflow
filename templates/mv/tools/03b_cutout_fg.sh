@@ -20,7 +20,7 @@ IN="${1:?usage: 03b_cutout_fg.sh <image> [--place] [public_dir]}"; shift
 PLACE=0; [ "${1:-}" = "--place" ] && { PLACE=1; shift; }
 PUB="${1:-$PROJ/public}"
 mkdir -p "$PUB"
-TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
+TMP="$(mktemp -d "${TMPDIR:-/tmp}/resonal-mv.XXXXXX")"; trap 'rm -rf "$TMP"' EXIT
 CUT="$TMP/cutout.png"
 
 # 透過の平均（255=不透明）。透過のない画像は format=rgba で 255 になる

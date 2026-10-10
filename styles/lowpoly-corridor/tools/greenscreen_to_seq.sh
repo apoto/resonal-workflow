@@ -12,7 +12,7 @@ SRC="${1:?greenscreen video mp4}"
 PROJ="$(cd "$(dirname "$0")/.." && pwd)"
 SEQ="$PROJ/public/char_seq"
 PY_BIN="${PYTHON:-python3}"
-WORK="$(mktemp -d)/seq"; mkdir -p "$WORK"/{raw,clean,up}
+WORK="$(mktemp -d "${TMPDIR:-/tmp}/resonal-seq.XXXXXX")/seq"; mkdir -p "$WORK"/{raw,clean,up}
 trap 'rm -rf "$(dirname "$WORK")"' EXIT
 # --- 1) 緑をサンプルしてクロマキー+despill → 30fps連番 ---
 GREEN=$("$PY_BIN" - "$SRC" <<'PY'

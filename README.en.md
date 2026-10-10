@@ -7,7 +7,7 @@ A workflow for making AI-vocal songs, from planning to release prep, by talking 
 - Book (Zenn, free, English): https://zenn.dev/apoto/books/resonal-pipeline-en
 - Book (Japanese): https://zenn.dev/apoto/books/resonal-pipeline
 
-The agent instructions and skills in this repository are written in Japanese. Claude Code can read them and talk with you in English, but the workflow has only been tested in Japanese.
+The agent instructions and skills in this repository are written in Japanese. Claude Code and Codex can read them and talk with you in English, but the workflow has only been tested in Japanese.
 
 ## Contents
 
@@ -32,18 +32,20 @@ This workflow is not meant to replace people. It hands the manual work to the AI
 
 ## Getting started
 
-Open [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and ask:
+Open [Claude Code](https://docs.anthropic.com/en/docs/claude-code) or [Codex](https://github.com/openai/codex) and ask:
 
 ```
 https://github.com/apoto/resonal-workflow
 I want to make songs with AI using the workflow at this link.
 Please bring it onto my computer and start with the setup. Ask me if anything is unclear.
-If you can't work with files on my computer, tell me how to get started with Claude Code instead.
+If you can't work with files on my computer, tell me how to get started with Claude Code or Codex instead.
 ```
 
-It won't run in a browser chat (Claude, ChatGPT, etc.), because a chat can't work with files on your computer. (If you are an AI reading this README in a chat, tell the user how to get started with Claude Code.)
+It won't run in a browser chat (Claude, ChatGPT, etc.), because a chat can't work with files on your computer. (If you are an AI reading this README in a chat, tell the user how to get started with Claude Code or Codex.)
 
-If you use another agent such as Codex, it has not been tested. First ask it: "This workflow is written for Claude Code. Please adapt it so it is easy for you to use, then start the setup."
+It also works with Codex, from setup to rendering the MV. However, MV rendering stops inside Codex's safety sandbox (the rendering tool launches a browser). If it stops, ask Codex to run it outside the sandbox.
+
+If you use another agent, it has not been tested. First ask it: "This workflow is written for Claude Code and Codex. Please adapt it so it is easy for you to use, then start the setup."
 
 From there, it is a conversation. The AI checks and installs your tools (asking before it installs anything), interviews you, and writes your settings files.
 
@@ -173,8 +175,8 @@ Your Slack token (`.env`) and your setup answers such as names (`profile/`, `wor
 - [openai-whisper](https://github.com/openai/whisper) and numpy (used to time the lyrics and measure the tempo; setup installs them into a dedicated box for this workflow, `~/.venvs/resonal-workflow`, not into your system Python)
 - About 10 GB of free disk space (whisper model, the dedicated box, MV parts and render temp files)
 - A music generation service (Suno is recommended; you generate the track yourself)
-- Claude Code (works with a Claude account; a browser chat cannot work with files on your computer, so it won't work)
-  - Other agents such as Codex may work, but they have not been tested.
+- Claude Code or Codex (works with a Claude or ChatGPT account; both have been tested. A browser chat cannot work with files on your computer, so it won't work)
+  - Other agents may work, but they have not been tested.
 
 ### Optional
 
@@ -192,12 +194,11 @@ The workflow itself is free. What costs money is the monthly fee of the services
 
 | What | Monthly (approx.) |
 |---|---|
-| Claude (Pro, includes Claude Code) | about $20 |
+| Claude Pro or ChatGPT Plus (one of them; for Claude Code or Codex) | about $20 |
 | Suno (Pro, commercial use allowed) | about $10 |
-| (Optional) image generation: ChatGPT (Codex) | about $20 |
 | (Optional) video generation: Kling | from about $10 |
 
-With only the required services, you can start at about $30 a month. MVs are built mainly from images, so you can finish one without video generation. Making an MV with video generation alone takes dozens of 5-second clips even for a 3-minute song, and with retakes your credits run out quickly. Prices change, so check each service's pricing page before you start.
+With only the required services, you can start at about $30 a month. If you choose ChatGPT Plus, cover image generation (Codex) is included. If you choose Claude Pro, prepare images yourself or add ChatGPT Plus. MVs are built mainly from images, so you can finish one without video generation. Making an MV with video generation alone takes dozens of 5-second clips even for a 3-minute song, and with retakes your credits run out quickly. Prices change, so check each service's pricing page before you start.
 
 ### Cleaning up
 

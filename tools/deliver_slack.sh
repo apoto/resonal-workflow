@@ -19,7 +19,7 @@ SLACK_CHANNEL_ID="$(sed -n 's/^SLACK_CHANNEL_ID=//p' "$REPO/.env" | tail -1 | tr
 for c in curl jq ffmpeg python3; do command -v "$c" >/dev/null || { echo "[NG] $c が無い" >&2; exit 2; }; done
 TOK="$SLACK_BOT_TOKEN"; CH="$SLACK_CHANNEL_ID"
 TH=""; [ "$THREAD" != "-" ] && TH="$THREAD"
-WORK="$(mktemp -d)"; trap 'rm -rf "$WORK"' EXIT
+WORK="$(mktemp -d "${TMPDIR:-/tmp}/resonal-slack.XXXXXX")"; trap 'rm -rf "$WORK"' EXIT
 AUTH="$WORK/auth"; (umask 077; printf 'Authorization: Bearer %s\n' "$TOK" > "$AUTH")  # トークンを curl の引数（ps で見える）に載せない
 FAIL=0
 

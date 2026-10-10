@@ -6,7 +6,7 @@ set -euo pipefail
 source "$(dirname "$0")/_lib.sh"
 SONG="$(song_dir "${1:?usage: 06_verify.sh <song_dir>}")"
 TITLE="$(song_title "$SONG")"
-TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
+TMP="$(mktemp -d "${TMPDIR:-/tmp}/resonal-mv.XXXXXX")"; trap 'rm -rf "$TMP"' EXIT
 fail=0
 
 for f in "$SONG/$TITLE.mp4" "$SONG/$TITLE (Short).mp4" "$SONG/thumbnail.jpg"; do

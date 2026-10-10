@@ -6,7 +6,7 @@ set -eu
 cd "$(dirname "$0")/.."
 OUT="${1:-out}"; TITLE="${2:-main}"
 MAIN="$OUT/${TITLE}.mp4"; SHORT="$OUT/${TITLE} (Short).mp4"; THUMB="$OUT/thumbnail.jpg"
-TMP="$(mktemp -d)"
+TMP="$(mktemp -d "${TMPDIR:-/tmp}/resonal-mv.XXXXXX")"
 
 fail=0
 for f in "$MAIN" "$SHORT" "$THUMB"; do

@@ -62,7 +62,7 @@ codex)
   command -v codex >/dev/null || { echo "[NG] codex CLI が無い（npm install -g @openai/codex → codex login）" >&2; exit 2; }
   mkdir -p "$(dirname "$OUT")"
   TMO="${GEN_IMAGE_TIMEOUT:-1200}"
-  LOG="$(mktemp)"
+  LOG="$(mktemp "${TMPDIR:-/tmp}/resonal-image.XXXXXX")"
   # stdin を閉じる（開いたままだと codex exec が追加入力を待って止まる）
   "${CODEX[@]}" </dev/null >"$LOG" 2>&1 &
   CPID=$!
