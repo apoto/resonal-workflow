@@ -98,8 +98,9 @@ Q8 の聞き方:
   | music=`suno` | アカウントが無ければ、作曲工程の前に作っておくよう伝える（セットアップは続けてよい） |
   | image=`codex` | `npm install -g @openai/codex` のあと、利用者に `codex login` を実行してもらう |
   | image=`other`（`cmd:`） | そのコマンドが入っているかを `command -v` で確かめる。試しに生成はしない |
-  | video=`kling-mcp` | 使っている AI（Claude Code / Codex）に Kling MCP をつないでもらう。つなぎ方は Kling の案内に従う |
+  | video=`kling-mcp` | 使っている AI（Claude Code / Codex）の対応状況を[公式ガイド](https://kling.ai/app/mcp/guide)で確認し、グローバル版の接続先 `https://kling.ai/mcp/plugin` を案内する。OAuth のログイン・認可は利用者に行ってもらう |
   | notify=`slack` | `cp .env.example .env` を実行し、トークンとチャンネル ID は利用者が自分で `.env` に書く（チャットに貼ってもらわない） |
+- Kling を選んだ場合は、生成に有料クレジットを使うことを伝え、現在の料金・必要な残高を利用者に確認してもらう。中国版とグローバル版ではアカウント・クレジット・タスクが別なので、利用者の地域に合う公式案内に従い、別地域のタスクを引き継がない。
 - セットアップ中に外部サービスで生成・送信を試さない。
 
 ## 3. 書いて、見せて、確認する
